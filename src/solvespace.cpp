@@ -94,7 +94,7 @@ void SolveSpaceUI::Init() {
     // Export pwl curves (instead of exact) always
     exportPwlCurves = settings->ThawBool("ExportPwlCurves", false);
     // Background color on-screen
-    backgroundColor = settings->ThawColor("BackgroundColor", RGBi(0, 0, 0));
+    backgroundColor = settings->ThawColor("BackgroundColor", RGBf(0.12, 0.12, 0.12));
     // Whether export canvas size is fixed or derived from bbox
     exportCanvasSizeAuto = settings->ThawBool("ExportCanvasSizeAuto", true);
     // Margins for automatic canvas size

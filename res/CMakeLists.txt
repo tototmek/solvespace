@@ -281,7 +281,21 @@ add_resources(
     icons/text-window/outlines.png
     icons/text-window/point.png
     icons/text-window/shaded.png
-    icons/text-window/workplane.png
+    icons/text-window/workplane-hidden.png
+    icons/text-window/constraint-hidden.png
+    icons/text-window/constraint-dimo-hidden.png
+    icons/text-window/construction-hidden.png
+    icons/text-window/edges-hidden.png
+    icons/text-window/faces-hidden.png
+    icons/text-window/occluded-visible-hidden.png
+    icons/text-window/occluded-stippled-hidden.png
+    icons/text-window/occluded-invisible-hidden.png
+    icons/text-window/mesh-hidden.png
+    icons/text-window/normal-hidden.png
+    icons/text-window/outlines-hidden.png
+    icons/text-window/point-hidden.png
+    icons/text-window/shaded-hidden.png
+    icons/text-window/workplane-hidden.png
     locales.txt
     locales/cs_CZ.po
     locales/de_DE.po

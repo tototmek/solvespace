@@ -8,21 +8,21 @@
 #include "solvespace.h"
 
 const Style::Default Style::Defaults[] = {
-    { { ACTIVE_GRP },   "ActiveGrp",    RGBf(1.0, 1.0, 1.0), 1.5, 4, true,  StipplePattern::CONTINUOUS },
-    { { CONSTRUCTION }, "Construction", RGBf(0.1, 0.7, 0.1), 1.5, 0, false, StipplePattern::CONTINUOUS },
-    { { INACTIVE_GRP }, "InactiveGrp",  RGBf(0.5, 0.3, 0.0), 1.5, 3, true,  StipplePattern::CONTINUOUS },
-    { { DATUM },        "Datum",        RGBf(0.0, 0.8, 0.0), 1.5, 0, true,  StipplePattern::CONTINUOUS },
-    { { SOLID_EDGE },   "SolidEdge",    RGBf(0.8, 0.8, 0.8), 1.0, 2, true,  StipplePattern::CONTINUOUS },
-    { { CONSTRAINT },   "Constraint",   RGBf(1.0, 0.1, 1.0), 1.0, 0, true,  StipplePattern::CONTINUOUS },
-    { { SELECTED },     "Selected",     RGBf(1.0, 0.0, 0.0), 1.5, 0, true,  StipplePattern::CONTINUOUS },
-    { { HOVERED },      "Hovered",      RGBf(1.0, 1.0, 0.0), 1.5, 0, true,  StipplePattern::CONTINUOUS },
-    { { CONTOUR_FILL }, "ContourFill",  RGBf(0.0, 0.1, 0.1), 1.0, 0, true,  StipplePattern::CONTINUOUS },
-    { { NORMALS },      "Normals",      RGBf(0.0, 0.4, 0.4), 1.0, 0, true,  StipplePattern::CONTINUOUS },
-    { { ANALYZE },      "Analyze",      RGBf(0.0, 1.0, 1.0), 3.0, 0, true,  StipplePattern::CONTINUOUS },
-    { { DRAW_ERROR },   "DrawError",    RGBf(1.0, 0.0, 0.0), 8.0, 0, true,  StipplePattern::CONTINUOUS },
-    { { DIM_SOLID },    "DimSolid",     RGBf(0.1, 0.1, 0.1), 1.0, 0, true,  StipplePattern::CONTINUOUS },
-    { { HIDDEN_EDGE },  "HiddenEdge",   RGBf(0.8, 0.8, 0.8), 1.0, 1, true,  StipplePattern::DASH },
-    { { OUTLINE },      "Outline",      RGBf(0.8, 0.8, 0.8), 3.0, 5, true,  StipplePattern::CONTINUOUS },
+    { { ACTIVE_GRP },   "ActiveGrp",    RGBf(0.80, 0.96, 0.84), 1.5, 4, true,  StipplePattern::CONTINUOUS },
+    { { CONSTRUCTION }, "Construction", RGBf(0.39, 0.39, 0.38), 1.5, 0, false, StipplePattern::DASH },
+    { { INACTIVE_GRP }, "InactiveGrp",  RGBf(0.29, 0.29, 0.29), 1.5, 3, true,  StipplePattern::CONTINUOUS },
+    { { DATUM },        "Datum",        RGBf(0.65, 0.89, 0.63), 1.5, 0, true,  StipplePattern::CONTINUOUS },
+    { { SOLID_EDGE },   "SolidEdge",    RGBf(0.69, 0.69, 0.69), 1.0, 2, true,  StipplePattern::CONTINUOUS },
+    { { CONSTRAINT },   "Constraint",   RGBf(0.36, 0.53, 0.42), 1.0, 0, true,  StipplePattern::CONTINUOUS },
+    { { SELECTED },     "Selected",     RGBf(0.83, 0.47, 0.11), 1.5, 0, true,  StipplePattern::CONTINUOUS },
+    { { HOVERED },      "Hovered",      RGBf(0.98, 0.89, 0.69), 1.5, 0, true,  StipplePattern::CONTINUOUS },
+    { { CONTOUR_FILL }, "ContourFill",  RGBf(0.28, 0.28, 0.28), 1.0, 0, true,  StipplePattern::CONTINUOUS },
+    { { NORMALS },      "Normals",      RGBf(0.35, 0.40, 0.35), 1.0, 0, true,  StipplePattern::CONTINUOUS },
+    { { ANALYZE },      "Analyze",      RGBf(0.54, 0.86, 0.92), 3.0, 0, true,  StipplePattern::CONTINUOUS },
+    { { DRAW_ERROR },   "DrawError",    RGBf(0.53, 0.11, 0.00), 8.0, 0, true,  StipplePattern::CONTINUOUS },
+    { { DIM_SOLID },    "DimSolid",     RGBf(0.39, 0.39, 0.39), 1.0, 0, true,  StipplePattern::CONTINUOUS },
+    { { HIDDEN_EDGE },  "HiddenEdge",   RGBf(0.42, 0.53, 0.44), 1.0, 1, true,  StipplePattern::DASH },
+    { { OUTLINE },      "Outline",      RGBf(0.65, 0.78, 0.68), 3.0, 5, true,  StipplePattern::CONTINUOUS },
     { { 0 },            NULL,           RGBf(0.0, 0.0, 0.0), 0.0, 0, true,  StipplePattern::CONTINUOUS }
 };
 
@@ -128,7 +128,7 @@ void Style::LoadFactoryDefaults() {
         Style *s = Get(d->h);
         FillDefaultStyle(s, d, /*factory=*/true);
     }
-    SS.backgroundColor = RGBi(0, 0, 0);
+    SS.backgroundColor = RGBf(0.12, 0.12, 0.12);
 }
 
 void Style::FreezeDefaultStyles(Platform::SettingsRef settings) {

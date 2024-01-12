@@ -164,7 +164,7 @@ void TextWindow::ShowListOfGroups() {
         &(TextWindow::ScreenShowGroupsSpecial));
     Printf(true,  "  %Fl%Ls%fline styles%E /"
                    " %Fl%Ls%fview%E /"
-                   " %Fl%Ls%fconfiguration%E",
+                   " %Fl%Ls%fconfig%E",
         &(TextWindow::ScreenShowListOfStyles),
         &(TextWindow::ScreenShowEditView),
         &(TextWindow::ScreenShowConfiguration));

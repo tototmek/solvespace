@@ -180,7 +180,7 @@ bool GraphicsWindow::ToolbarDrawOrHitTest(int mx, int my, UiCanvas *canvas,
 
     if(canvas) {
         canvas->DrawRect(aleft, aright, atop, abot,
-                        /*fillColor=*/{ 30, 30, 30, 255 },
+                        /*fillColor=*/{ 28, 28, 28, 255 },
                         /*outlineColor=*/{});
     }
 
@@ -198,7 +198,7 @@ bool GraphicsWindow::ToolbarDrawOrHitTest(int mx, int my, UiCanvas *canvas,
                 // Draw a separator bar in a slightly different color.
                 int divw = 30, divh = 2;
                 canvas->DrawRect(x+16+divw, x+16-divw, y+24+divh, y+24-divh,
-                                 /*fillColor=*/{ 45, 45, 45, 255 },
+                                 /*fillColor=*/{ 42, 42, 42, 255 },
                                  /*outlineColor=*/{});
             }
 
@@ -220,7 +220,7 @@ bool GraphicsWindow::ToolbarDrawOrHitTest(int mx, int my, UiCanvas *canvas,
                 // Highlight the hovered or pending item.
                 const int boxhw = 15;
                 canvas->DrawRect(x+boxhw, x-boxhw, y+boxhw, y-boxhw,
-                                 /*fillColor=*/{ 255, 255, 0, 75 },
+                                 /*fillColor=*/{ 200, 200, 200, 75 },
                                  /*outlineColor=*/{});
             }
         } else {
